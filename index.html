@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Color Dropper</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="header" class="header">
+        <button class="color-picker-btn"><img alt="color-picker" src="/public/iconColorPicker.svg" /></button>
+        <span class="hex-el"></span>
+        <span></span>
+      </header>
+      <main class="picture-wrapper">
+        <svg
+          id="magnifier-svg"
+          width="160"
+          height="160"
+          viewBox="0 0 160 160"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <image x="0" y="0" height="0" width="0"/>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M80 148C117.555 148 148 117.555 148 80C148 42.4446 117.555 12 80 12C42.4446 12 12 42.4446 12 80C12 117.555 42.4446 148 80 148ZM80 160C124.183 160 160 124.183 160 80C160 35.8172 124.183 0 80 0C35.8172 0 0 35.8172 0 80C0 124.183 35.8172 160 80 160Z"
+            fill="#000000"
+          />
+          <rect stroke="#000000" stroke-width="1" height="0" width="0"/>
+          <text font-size="14" fill="#000000">#000000</text>
+        </svg>
+        <canvas id="canvas"></canvas>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
